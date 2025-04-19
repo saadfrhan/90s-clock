@@ -20,9 +20,28 @@ body {
   font-size: 48px;
   text-align: center;
   background: #f0f;
+  padding: 10px;
   color: lime;
   width: 100%;
   max-width: 600px;
+}
+
+.card button {
+  color: lime;
+  border: none;
+  font-size: 48px;
+  margin-top: 20px;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* better background please */
+  background: linear-gradient(45deg, #f0f, #0ff);
+}
+
+.card #message {
+  font-size: 36px;
+  margin-top: 20px;
+  color: #fff;
 }
 
 #time {
