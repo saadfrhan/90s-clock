@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(../public/wallpaper.jpg);
+  background-image: url(./images/wallpaper.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -47,17 +47,26 @@ body {
 #time {
   text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
   transform: rotate(1deg);
-  animation: shake 0.5s infinite;
+  animation: rainbow 3s infinite, shake 0.5s infinite;
 }
 
-@keyframes shake {
+@keyframes rainbow {
   0% {
-    transform: rotate(1deg);
-  }
-  50% {
-    transform: rotate(-1deg);
+    filter: hue-rotate(0deg);
   }
   100% {
-    transform: rotate(1deg);
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
   }
 }
