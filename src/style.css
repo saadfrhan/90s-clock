@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../public/wallpaper.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  font-family: "Comic Neue", cursive;
+  font-size: 48px;
+  text-align: center;
+  background: #f0f;
+  color: lime;
+  width: 100%;
+  max-width: 600px;
+}
+
+#time {
+  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
+  transform: rotate(1deg);
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}
